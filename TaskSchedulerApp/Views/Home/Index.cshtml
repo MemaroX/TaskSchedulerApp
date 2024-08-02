@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <header class="text-center mb-4">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p class="lead">Welcome to the Task Scheduler Application!</p>
+    </header>
+
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm border-light">
+                <div class="card-body">
+                    <h5 class="card-title">Task Overview</h5>
+                    <p class="card-text">Easily manage your tasks with a user-friendly interface.</p>
+                    <a href="@Url.Action("Index", "Tasks")" class="btn btn-primary btn-lg">Manage Tasks</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm border-light">
+                <div class="card-body">
+                    <h5 class="card-title">About</h5>
+                    <p class="card-text">Our application helps you stay organized and productive.</p>
+                    <a href="@Url.Action("About", "Home")" class="btn btn-info btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm border-light">
+                <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <p class="card-text">Get in touch with us for support or feedback.</p>
+                    <a href="@Url.Action("Contact", "Home")" class="btn btn-success btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Add a footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <span>&copy; 2024 TaskSchedulerApp. All rights reserved.</span>
+    </div>
+</footer>

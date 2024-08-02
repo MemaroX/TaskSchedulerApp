@@ -1,0 +1,13 @@
+﻿@model TaskSchedulerApp.Models.Task1
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h2>@Model.TaskName</h2>
+    <p>Due Date: @Model.DueDate.ToShortDateString()</p>
+    <a href="/Tasks">Back to list</a>
+</div>

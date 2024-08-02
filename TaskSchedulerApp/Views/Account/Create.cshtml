@@ -1,0 +1,28 @@
+﻿@model TaskSchedulerApp.Models.Task1
+
+@{
+    ViewData["Title"] = "Create Task";
+}
+
+<h1>Create Task</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="TaskName" class="control-label"></label>
+        <input asp-for="TaskName" class="form-control" />
+        <span asp-validation-for="TaskName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsCompleted" class="control-label"></label>
+        <input asp-for="IsCompleted" class="form-check-input" />
+        <span asp-validation-for="IsCompleted" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DueDate" class="control-label"></label>
+        <input asp-for="DueDate" class="form-control" type="date" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
